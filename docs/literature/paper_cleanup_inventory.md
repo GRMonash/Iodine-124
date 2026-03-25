@@ -1,9 +1,10 @@
-# Reference paper inventory (updated 2026-03-25)
+# Paper cleanup inventory
 
-This inventory includes all currently visible PDFs and their cleanup status.
+Date: 2026-03-25
 
-## Primary references
+## A) Final PDF inventory and duplicate assessment
 
+### Primary references (15)
 - `references/blood_protocols/2008_EANM_blood_bone_marrow_guidelines.pdf`
 - `references/blood_protocols/patient_approach_dosimetric_role.pdf`
 - `references/whole_body/2023_EANM_whole_body_dosimetry_guidelines.pdf`
@@ -20,8 +21,7 @@ This inventory includes all currently visible PDFs and their cleanup status.
 - `references/reviews/clinical_radionuclide_therapy_dosimetry_review.pdf`
 - `references/reviews/thyroid_cancer_dosimetry_review.pdf`
 
-## Duplicates / alternate filename copies
-
+### Duplicate / alternate copies (14)
 - `references/duplicates/2008_Jentzen_optimized_124I_PET_protocol_duplicate.pdf`
 - `references/duplicates/2008_Schwartz_124I_PET_bone_marrow_dosimetry_duplicate.pdf`
 - `references/duplicates/2010_Ferrer_three_red_marrow_dosimetry_methods_duplicate.pdf`
@@ -37,11 +37,34 @@ This inventory includes all currently visible PDFs and their cleanup status.
 - `references/duplicates/patient_approach_dosimetric_role_duplicate.pdf`
 - `references/duplicates/thyroid_cancer_dosimetry_review_duplicate.pdf`
 
-## Unclear / needs manual review
-
+### Unclear / manual review (1)
 - `references/unclear/s00259-023-06568-8_needs_manual_title_verification.pdf`
 
-## Notes
+Duplicate determination used exact SHA-256 hash and file size matching.
 
-- Duplicate detection used exact SHA-256 + file size matching.
-- Where equivalent files existed with inconsistent naming, one copy was promoted to the primary standardized path and alternates were retained under `references/duplicates/`.
+## B) Files moved/renamed
+
+All root-level PDFs were moved under `references/` with standardized names and category folders:
+- `references/marrow/`
+- `references/whole_body/`
+- `references/blood_protocols/`
+- `references/lesion_imaging/`
+- `references/reviews/`
+- `references/duplicates/`
+- `references/unclear/`
+
+## C) Files kept as duplicates or flagged for review
+
+- Duplicate files were retained in `references/duplicates/` for traceability.
+- The single unclear-title file was isolated in `references/unclear/` for manual identification.
+
+## D) Links/paths updated
+
+- `references/README.md` was replaced with the new organized inventory.
+- No additional markdown/pdf path references were found elsewhere in the repo during search.
+
+## E) Remaining cleanup suggestions
+
+1. Open and inspect `references/unclear/s00259-023-06568-8_needs_manual_title_verification.pdf` and rename with author/year/title.
+2. After verification, consider deleting unneeded duplicates from `references/duplicates/`.
+3. Add citation metadata (DOI, year, first author) in a structured `references/index.csv` or `references/index.md`.
