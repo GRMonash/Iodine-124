@@ -1,0 +1,22 @@
+{
+  "method_name": "wb_retention_benchmark_v0",
+  "method_family": "whole_body_retention",
+  "method_version": "v0",
+  "status": {
+    "source_lock_status": "source_locked",
+    "implementation_status": "implementation_default",
+    "provisional_status": "provisional"
+  },
+  "inputs": {
+    "workbook": "Data - Full.xlsx",
+    "method1_method2_baseline": "reports/sampling_sensitivity/patient_level_results.csv"
+  },
+  "outputs": {
+    "patient_level": "patient_level_wb_retention_benchmark_v0.csv",
+    "cohort_summary": "cohort_summary_wb_retention_benchmark_v0.csv",
+    "comparison_method1_vs_wb": "comparison_method1_vs_wb_retention_benchmark_v0.csv",
+    "comparison_method2_vs_wb": "comparison_method2_vs_wb_retention_benchmark_v0.csv",
+    "method1_driver_dominance": "method1_driver_dominance_vs_wb_benchmark.csv",
+    "report": "wb_retention_benchmark_report.md"
+  }
+}

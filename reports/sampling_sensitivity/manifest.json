@@ -1,0 +1,51 @@
+{
+  "input_workbook": "Data - Full.xlsx",
+  "scenarios": {
+    "full_5pt": {
+      "label": "Full baseline (5 blood samples)",
+      "points": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "triad_1_3_5": {
+      "label": "3-point early/mid/late (1,3,5)",
+      "points": [
+        1,
+        3,
+        5
+      ]
+    },
+    "triad_2_3_5": {
+      "label": "3-point mid/late (2,3,5)",
+      "points": [
+        2,
+        3,
+        5
+      ]
+    },
+    "dyad_1_5": {
+      "label": "2-point early/late (1,5)",
+      "points": [
+        1,
+        5
+      ]
+    },
+    "dyad_2_5": {
+      "label": "2-point practical ward+late (2,5)",
+      "points": [
+        2,
+        5
+      ]
+    }
+  },
+  "outputs": {
+    "scenario_summary": "scenario_summary.csv",
+    "patient_level": "patient_level_results.csv",
+    "excluded_rows": "excluded_rows.csv",
+    "interpretation": "interpretation.md"
+  }
+}
